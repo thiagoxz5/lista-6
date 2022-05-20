@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int n = 10;
+// pegar os números negativos
+void recebe(int n, float vetor[n]) {
+  int neg = 0, x = 0;
+  for (int i = 0; i < n; i++) {
+    if (vetor[i] < 0)
+      neg++;
+  }
+  printf("\nneg: %d\n", neg); // quantidade de negativos
+  float vneg[neg];
+  for (int = 0; i < n; i++) {
+    if (vetor[i] < 0) {
+      vneg[x++] = vetor[1];
+      printf("%.0f", vneg[x - 1]);
+    }
+  }
+}
+int main(void) {
+  float v[n];
+  printf("digite 10 números: \n");
+  for (int i = 0; i < n; i++) {
+    scanf("%f", &v[i]);
+  }
+  recebe(n, v);
+  return 0;
+}
